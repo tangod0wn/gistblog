@@ -77,10 +77,9 @@ return [
     | will not be safe. Please do this before deploying an application!
     |
     */
+    'key' => env('APP_KEY'),
 
-    'key' => env('APP_KEY', 'SomeRandomString'),
-
-    'cipher' => MCRYPT_RIJNDAEL_128,
+    'cipher' => 'AES-256-CBC',
 
     /*
     |--------------------------------------------------------------------------
